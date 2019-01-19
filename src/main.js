@@ -25,8 +25,6 @@ import VTooltip from 'v-tooltip'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VTable from './components/Table'
 import VCTable from './content-components/VCTable'
-import Mermaid from './content-components/Mermaid'
-import MermaidP from './content-components/MermaidP'
 import VSVG from './content-components/VSVG'
 import SectionLink from './components/SectionLink'
 import TOC from './components/TOC'
@@ -36,7 +34,6 @@ import ImageLeft from './components/layout/ImageLeft'
 import LVTimeline from './components/LVTimeline'
 import WordCloud from './components/WordCloud'
 import Kanban from './components/Kanban'
-import MermaidBoard from './components/MermaidBoard'
 import D3Board from './components/D3Board'
 import { TableComponent, TableColumn } from 'vue-table-component'
 import SummaryTable from './components/SummaryTable'
@@ -61,8 +58,6 @@ Vue.component('Nodelink', NodeLink)
 Vue.component('v-table', VTable)
 Vue.component('v-svg', VSVG)
 Vue.component('vc-table', VCTable)
-Vue.component('mermaid', Mermaid)
-Vue.component('mermaidp', MermaidP)
 Vue.component('mj', MathJaxComponent)
 Vue.component('info-card', InfoCard)
 Vue.component('l-map', Vue2Leaflet.LMap)
@@ -72,7 +67,6 @@ Vue.component('summary-table', SummaryTable)
 Vue.component('table-component', TableComponent)
 Vue.component('table-column', TableColumn)
 Vue.component('kanban', Kanban)
-Vue.component('mermaid-board', MermaidBoard)
 Vue.component('d3-board', D3Board)
 Vue.component(VueWordCloud.name, VueWordCloud)
 

@@ -9,8 +9,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="josephorr.20181002174010.1"><vh>@cover</vh></v>
-<v t="josephorr.20170228222411.2"><vh>LeoVue</vh></v>
+
 <v t="josephorr.20170326174500.1"><vh>More About Leo</vh>
 <v t="josephorr.20170327233137.1"><vh>[Feature Introduction](https://kaleguy.github.io/leo-tutorials/feature-introduction.md)</vh></v>
 <v t="josephorr.20170327233223.1"><vh>[Chunking](https://kaleguy.github.io/leo-tutorials/chunking.md)</vh></v>

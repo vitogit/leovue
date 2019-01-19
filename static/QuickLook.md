@@ -69,16 +69,6 @@ supported, so you can add Markdown, HTML or Vue Components to your presentations
 <div class="hshim"></div>
 <img src="images/leovue7.png" alt="alt text" width="700">
 
-### Create Diagrams from Outlines
-
-You can convert a Leo subtree to a Mermaidjs diagram. To see
-the Mermaidjs source code, click on the source icon in the upper
-right.
-
-<div class="hshim"></div>
-<div class="hshim"></div>
-<img src="images/leovue8.png" alt="alt text" width="700">
-
 ### Display an Outline as a Kanban board.
 
 A Leo outline can be used for simple task management. Display a

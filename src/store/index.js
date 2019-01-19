@@ -227,14 +227,6 @@ function showKanban (context, title, id) {
   context.commit('CONTENT_ITEM_UPDATE')
   context.commit('CONTENT_PANE', { type: 'board' })
 }
-function showMermaid (context, title, id) {
-  let text = `<mermaid-board/>`
-  context.commit('CURRENT_ITEM_CONTENT', { text })
-  const newItem = { id, t: text }
-  context.commit('CONTENT_ITEM', {item: newItem})
-  context.commit('CONTENT_ITEM_UPDATE')
-  context.commit('CONTENT_PANE', { type: 'board' })
-}
 
 function checkCache (context, item, url) { // eslint-disable-line
   if (item.loaded) {
@@ -1530,9 +1522,6 @@ export default new Vuex.Store({
         }
         if (/^@kanban /.test(item.name)) {
           return showKanban(context, item.name, id)
-        }
-        if (/^@mermaid/.test(item.name)) {
-          return showMermaid(context, item.name, id)
         }
         // if dataSet has a param.template, render the transformed html
         if (/^@dataSet/.test(item.name)) {
