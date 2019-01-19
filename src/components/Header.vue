@@ -173,10 +173,8 @@
       viewTypes () {
         let viewTypes = [
           {name: 'Outline', type: 't'},
-          {name: 'Inline', type: 'a'},
           {name: 'Graphic Tree', type: 'd'},
           {name: 'Dendrogram', type: 'z'},
-          {name: 'Nested Menu', type: 'n'},
           {name: 'Movable Panes', type: 'w'}
         ]
         if (this.config.viewTypes) {

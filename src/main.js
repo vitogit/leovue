@@ -12,7 +12,6 @@ import 'vue-awesome/icons/arrow-right'
 import 'vue-awesome/icons/check'
 import 'vue-awesome/icons/chevron-left'
 import 'vue-awesome/icons/'
-import ForkMeOnGithub from 'fork-me-on-github-vue'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -46,7 +45,6 @@ const Defiant = require('./lib/defiant') // eslint-disable-line
 
 Vue.use(VTooltip)
 Vue.use(VueYouTubeEmbed)
-Vue.use(ForkMeOnGithub)
 Vue.use(BootstrapVue)
 Vue.component('star-rating', StarRating)
 Vue.component('lv-timeline', LVTimeline)
