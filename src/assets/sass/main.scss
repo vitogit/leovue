@@ -63,9 +63,9 @@ h3 {
 
 .button {
   font-weight: bold;
-  display: inline-flex;
+  // display: inline-flex;
   background: transparent;
-  border: 0;
+  // border: 0;
   color: $color-black;
   padding: 0.2rem 0.5rem;
   margin-right: 0.2rem;
@@ -74,6 +74,8 @@ h3 {
   background-color: rgba($color-black, 0.1);
 }
 
+
+  
 @import "./editor";
 @import "./menubar";
 @import "./menububble";

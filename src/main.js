@@ -17,6 +17,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'timeline-vuejs/dist/timeline-vuejs.css'
 
+import svgSpriteLoader from './helpers/svg-sprite-loader'
+
 // content components
 import Vue2Leaflet from 'vue2-leaflet'
 import InfoCard from 'vue-info-card'
@@ -42,6 +44,10 @@ import {charts} from './content-components/Charts'
 charts(Vue)
 
 const Defiant = require('./lib/defiant') // eslint-disable-line
+
+const __svg__ = { path: './assets/images/icons/*.svg', name: 'assets/images/[hash].sprite.svg' }
+// will overwrite to var __svg__ = { filename: "assets/svg/1466687804854.logos.svg" };
+svgSpriteLoader(__svg__.filename)
 
 Vue.use(VTooltip)
 Vue.use(VueYouTubeEmbed)

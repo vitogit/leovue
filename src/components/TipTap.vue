@@ -52,7 +52,7 @@
         </button>
 
         <button
-          class="menubar__button"
+          class="menubar__button custom_button"
           :class="{ 'is-active': isActive.heading({ level: 1 }) }"
           @click="commands.heading({ level: 1 })"
         >
@@ -60,7 +60,7 @@
         </button>
 
         <button
-          class="menubar__button"
+          class="menubar__button custom_button"
           :class="{ 'is-active': isActive.heading({ level: 2 }) }"
           @click="commands.heading({ level: 2 })"
         >
@@ -68,7 +68,7 @@
         </button>
 
         <button
-          class="menubar__button"
+          class="menubar__button custom_button"
           :class="{ 'is-active': isActive.heading({ level: 3 }) }"
           @click="commands.heading({ level: 3 })"
         >
@@ -136,10 +136,6 @@
 </template>
 
 <script>
-import svgSpriteLoader from '../helpers/svg-sprite-loader'
-const __svg__ = { path: './assets/images/icons/*.svg', name: 'assets/images/[hash].sprite.svg' }
-// will overwrite to var __svg__ = { filename: "assets/svg/1466687804854.logos.svg" };
-svgSpriteLoader(__svg__.filename)
 
 import Icon from './TipTapIcon'
 import { Editor, EditorContent, EditorMenuBar } from 'tiptap'
