@@ -37,7 +37,7 @@ import D3Board from './components/D3Board'
 import { TableComponent, TableColumn } from 'vue-table-component'
 import SummaryTable from './components/SummaryTable'
 import VueWordCloud from 'vuewordcloud'
-
+import TipTap from './components/TipTap'
 import {charts} from './content-components/Charts'
 charts(Vue)
 
@@ -67,6 +67,7 @@ Vue.component('table-column', TableColumn)
 Vue.component('kanban', Kanban)
 Vue.component('d3-board', D3Board)
 Vue.component(VueWordCloud.name, VueWordCloud)
+Vue.component('tiptap', TipTap)
 
 sync(store, router)
 

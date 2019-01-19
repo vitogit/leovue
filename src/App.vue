@@ -5,10 +5,8 @@
        @dragover="dragover_handler($event);"
        @dragend="dragend_handler($event);">
     <cover></cover>
+    <tiptap/>
     <router-view></router-view>
-    <Ribbon v-if="hasGithubRibbon"
-      v-bind="ribbonOptions"
-    ></Ribbon>
   </div>
 </template>
 
@@ -18,17 +16,6 @@
     name: 'app',
     components: {
       cover: Cover
-    },
-    computed: {
-      hasGithubRibbon: function () {
-        if (window.lconfig.githubRibbon) {
-          return true
-        }
-        return false
-      },
-      ribbonOptions: function () {
-        return window.lconfig.githubRibbon
-      }
     },
     methods: {
       // drag and drop a leo file
@@ -93,6 +80,7 @@
 <style lang="sass">
 
 @import './assets/global.sass'
+@import './assets/sass/main.scss'
 @import './assets/vue-instant.css'
 @import './assets/wikipedia.css'
 @import '~leaflet/dist/leaflet.css'

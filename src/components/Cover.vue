@@ -16,11 +16,6 @@
     },
     methods: {
       setup () {
-        const ribbon = document.getElementsByClassName('github-ribbon')
-        if (ribbon && ribbon[0]) {
-          ribbon[0].style.display = 'none'
-          window.lconfig.githubRibbon = false
-        }
       }
     },
     components: {},

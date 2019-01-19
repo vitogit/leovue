@@ -60,7 +60,6 @@ export default {
     return {
       reset: true,
       openFlag: false,
-      hasRibbon: true,
       inline: false,
       closearrow: false,
       myContent: ''
@@ -152,13 +151,6 @@ export default {
   },
   methods: {
     toggle: function () {
-      if (window.lconfig.githubRibbon) {
-        const ribbon = document.getElementsByClassName('github-ribbon')
-        if (ribbon && ribbon[0]) {
-          ribbon[0].style.display = 'none'
-          window.lconfig.githubRibbon = false
-        }
-      }
       const cover = document.getElementById('cover-page')
       if (cover) {
         cover.style.display = 'none'

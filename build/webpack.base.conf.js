@@ -3,6 +3,7 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+var SvgStore =require('webpack-svgstore-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -26,15 +27,25 @@ module.exports = {
       '@': resolve('src'),
     }
   },
-/*  plugins: [
-    new GoogleFontsPlugin({
-      fonts: [
-        { family: "Nunito" },
-        { family: "Nunito Sans" }
-      ]
-      /!* ...options *!/
+ plugins: [
+    // new GoogleFontsPlugin({
+    //   fonts: [
+    //     { family: "Nunito" },
+    //     { family: "Nunito Sans" }
+    //   ]
+    //   /!* ...options *!/
+    // })
+    new SvgStore({
+      prefix: 'icon--',
+      svgoOptions: {
+        plugins: [
+          { cleanupIDs: false },
+          { collapseGroups: false },
+          { removeTitle: true },
+        ],
+      },
     })
-  ],*/
+  ],
   module: {
     rules: [
       {
