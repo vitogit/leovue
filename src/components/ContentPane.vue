@@ -15,7 +15,8 @@
           <div class="inner-container" id="content-inner-container" style="width:100%; overflow:hidden">
             <div id="content-inner-containerb" class="right-cpane" :style="{overflowY: 'auto'}" v-on:scroll="onScroll" >
               <div :style="{width: cpWidth, marginLeft: 'auto', marginRight: 'auto'}">
-              <component :is="dynComponent" v-bind="$props"/>
+              <!-- <component :is="dynComponent" v-bind="$props"/> -->
+              <tiptap :key="this.currentItemId" :content="this.currentItemContent"/>
               </div>
             </div>
             </div>
@@ -194,6 +195,9 @@ export default {
         return false
       }
     },
+    currentItemId () {
+      return this.$store.state.currentItem.id
+    },
     currentItemContent () {
       return this.$store.state.currentItemContent
     },
@@ -213,6 +217,7 @@ export default {
     dynComponent () {
       // const id = this.$store.state.currentItem.id
       const template = this.currentItemContent ? this.currentItemContent : '<div></div>'
+
       return {
         template, // use content as template for this component
         props: this.$options.props // re-use current props definitions

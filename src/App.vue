@@ -4,9 +4,8 @@
        @drop="drop_handler($event);"
        @dragover="dragover_handler($event);"
        @dragend="dragend_handler($event);">
-    <!-- <cover></cover> -->
-    <tiptap/>
-    <!-- <router-view></router-view> -->
+    <cover></cover>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -65,14 +64,14 @@
 
     },
     mounted () {
-      // let filename = 'static/docs'
-      // if (window.lconfig.filename) {
-      //   filename = window.lconfig.filename
-      // }
-      // if (!this.$store.initializedData) {
-      //   this.$store.dispatch('loadLeo', {filename, route: this.$route})
-      // }
-      // this.$store.dispatch('setMessages')
+      let filename = 'static/docs'
+      if (window.lconfig.filename) {
+        filename = window.lconfig.filename
+      }
+      if (!this.$store.initializedData) {
+        this.$store.dispatch('loadLeo', {filename, route: this.$route})
+      }
+      this.$store.dispatch('setMessages')
     }
   }
 </script>
